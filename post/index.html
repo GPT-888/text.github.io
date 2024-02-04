@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="color-scheme" content="light dark">
+<title>神码观察|博客</title>
+<meta name="keywords" content="神码观察|博客">
+<meta name="description" content="神码观察|博客">
+<link rel="shortcut icon" href="/images/LOGO.ico">
+<link rel="stylesheet" href="/css/layui.css">
+<link rel="stylesheet" href="/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+<link rel="stylesheet" href="/css/simply.css">
+<script>
+window.theme = {
+	isMobile: /windows phone|iphone|android|HarmonyOS/gi.test(window.navigator.userAgent),
+	mediaQuery: window.matchMedia('(prefers-color-scheme: dark)'),
+	detectIE: function() {
+		let ua = window.navigator.userAgent,
+			ie = ua.indexOf('MSIE ');
+		if (ie > 0) {
+			return parseInt(ua.substring(ie + 5, ua.indexOf('.', ie)), 10);
+		}
+		if (ua.indexOf('Trident/') > 0) {
+			let rv = ua.indexOf('rv:');
+			return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+		}
+		let edge = ua.indexOf('.Edge/');
+		return edge > 0 && parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+	},
+	swiperDelay: 3	
+}
+theme.detectIE() && alert('当前站点不支持IE浏览器（或您开启了兼容模式），请使用其他浏览器访问（或关闭兼容模式）。');
+localStorage.getItem('dark-mode') && document.documentElement.classList.add('dark');
+
+function darkModeHandler() {
+	if (!theme.isMobile) return;
+	if (theme.mediaQuery.matches) {
+		document.documentElement.classList.remove('light');
+		document.documentElement.classList.add('dark');
+	} else {
+		document.documentElement.classList.remove('dark');
+		document.documentElement.classList.add('light');
+	}
+}
+darkModeHandler();
+theme.mediaQuery.addListener(darkModeHandler);
+</script>
+</head>
+<body>
+    <header>
+        <div class="flex-v-between container">
+            <div class="flex-v-center left">
+                                <a class="flex-v-center logo" href="/index.html" title="神码观察|官网">
+                        <img class="image" src="/images/LOGO（横向）.png" alt="LOGO">
+                    </a>
+                        </div>
+            <div class="flex-v-between right">
+                <nav>
+                        <nav>
+            <ul class="nav-items">
+                <li class="item"><a href="/index.html" >首页</a></li>
+                    <li class="item"><a href="https://blog.csdn.net/2302_81075415/category_12527866.html?spm=1001.2014.3001.5482" >开源推荐</a></li>
+                    <li class="item">
+                        <a>镜像下载<i class="icon-simply icon-down ml-5"></i></a>
+                        <div class="nav-child-box">
+                        <ul class="nav-child-items">
+                            <li class="item"><a href="/download/win/xp/winXP.html">Windows XP</a></li>
+                            <li class="item"><a href="/download/win/7/win7.html">Windows 7</a></li>
+                            <li class="item"><a href="/download/win/8/win8.html">Windows 8</a></li>
+                            <li class="item"><a href="/download/win/10/win10.html">Windows 10</a></li>
+                            <li class="item"><a href="/download/win/11/win11.html">Windows 11</a></li>
+                            <li class="item"><a href="/download/win/12/win12.html">Windows 12 用户自制版</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a>官方账号<i class="icon-simply icon-down ml-5"></i></a>
+                        <div class="nav-child-box">
+                        <ul class="nav-child-items">
+                            <li class="item"><a href="https://weibo.com/u/7086338548">微博</a></li>
+                            <li class="item"><a href="https://space.bilibili.com/3546578178542445?spm_id_from=333.1007.0.0">哔哩哔哩</a></li>
+                            <li class="item"><a href="https://blog.csdn.net/2302_81075415">CSDN</a></li>
+                            <li class="item"><a href="https://afdian.net/a/weblime">爱发电</a></li>
+                        </ul>
+                        </div>
+                    </li>
+            </ul>
+        </nav>
+    </nav>
+                <div class="divider-vertical">
+                    <button class="button-switch" id="dark-mode" type="button" role="switch">
+                        <div class="icon-box">
+                            <i class="icon-simply icon-during"></i>
+                            <i class="icon-simply icon-night"></i>
+                        </div>
+                    </button>
+                </div>
+                                <div class="divider-vertical"><a class="color-theme" href="/login/login.html">登录</a></div>
+                    <div class="divider-vertical"><a class="color-theme" href="/login/reg.html">注册</a></div>
+                        </div>
+            <div class="flex-center xs-nav-button">
+                <div class="nav-burger"></div>
+            </div>
+            <div class="xs-nav-layer"></div>
+        </div>
+    </header>
+<div class="container container-path">
+    <div class="web-path">
+        <a class="path" href="/index.html"><i class="icon-simply icon-home mr-5"></i>首页</a><span class="path">正文</span>
+    </div>
+</div>
+<div class="container frame-container container-article container-log">
+    <main class="frame-main">
+        <div class="box modularity">
+            <div class="modul-info">
+                <div class="user-info">
+                                        <a class="avatar" href="https://simply.webkit.top/author/1">
+                        <img src="/images/LOGO.png" alt="神码观察">
+                    </a>
+                    <div class="user-meta">
+                        <div class="nickname"><a href="/index.html">神码观察工作室</a></div>
+                        <div class="other">2024-01-13 15:30</div>
+                    </div>
+                </div>
+                <ul class="flex-list info">
+                    <li class="item read"><i class="icon-simply icon-hourglass mr-5"></i>本文约<span class="value">x</span>字，阅读需<span class="unit">x</span>分钟</li>
+                    <li class="item view"><i class="icon-simply icon-view mr-5"></i>689514</li>
+                    <li class="item comt"><a href="#comment"><i class="icon-simply icon-message mr-5"></i>999+</a></li>
+                </ul>
+            </div>
+            <div class="modul-body">
+                <article>
+                    <h1 class="title">V6.0新版网站通知</h1>
+                                                            <div class="content"><p>该网站在2024年1月13日00:00开始网站的全面升级；2024年1月13日15:30网站全面升级完成并迎来崭新的网站。</p><p>该网站上线了客服系统；意见反馈</p></div>
+                                        <div class="feed">若内容或图片失效，请<a href="https://www.v5kf.com/public/chat/chat?sid=203974&entry=5&ref=link&accountid=31cc603011177">点击这里联系客服</a>或联系博主。</div>                </article>
+                <ul class="log-copyright">
+                    <li class="item"><span>本文作者：</span>神码观察</li>
+                    <li class="item"><span>本文链接：</span>https://server.1-r.cn/post/index.html<i class="clipboard icon-simply icon-copy-fill ml-5" data-clipboard-text="https://server.1-r.cn/post/index.html"></i></li>
+                    <li class="item"><span>版权申明：</span>除非特别说明，否则均为本站原创文章，转载或复制请注明出处。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-1em log-neighbor">
+        <div class="box log-comment" id="comment">
+                <div class="comment-title">评论(尚未开发完成)</div>
+    <div class="my-2em comment-body">
+                    <div class="comment-post">
+                <form class="flex-column layui-form comment-form" method="post" name="commentForm" action="#" id="comment-form">
+                    <input type="hidden" name="gid" value="9">
+                    <input type="hidden" name="pid" value="">
+                    <div class="display-flex head">
+                        <input class="comment-control comment-name" autocomplete="off" type="text" name="comname" maxlength="49" value="" tabindex="1" placeholder="输入昵称（必填）" lay-verify="required">
+                        <input class="comment-control comment-mail" autocomplete="off" type="text" name="commail" maxlength="128" value="" tabindex="2" placeholder="电子邮箱" lay-verify="email">
+                        <input class="comment-control comment-url" autocomplete="off" type="text" name="comurl" maxlength="128" value="" tabindex="3" placeholder="个人主页" lay-verify="url">
+                    </div>
+                    <div class="display-flex body">
+                        <textarea class="comment-textarea" name="comment" rows="10" tabindex="4" placeholder="该处可能还在开发中~" lay-verify="required|chinese"></textarea>
+                    </div>
+                    <div class="display-flex flex-warp foot">
+                        <a href="javascript:;" target="_self" class="color-theme text-v-center comment-cancle" style="display: none;">取消</a>
+                                                <button type="submit" class="button comment-submit" tabindex="6" lay-submit lay-filter="comment">发送</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+                <div class="comment-items">
+            </div>
+    <div class="pagination">
+            </div>
+        </div>
+    </main>
+    <aside class="frame-aside">
+        
+        <aside class="frame-aside">
+        
+            <div class="box aside-blogger">
+                <div class="blogger-image">
+                    <img src="/images/1.jpg" alt="神码观察" />
+                </div>
+                <div class="user-info">
+                    <div class="avatar">
+                        <img src="/images/LOGO.png" alt="神码观察" />
+                    </div>
+                    <div class="user-meta">
+                        <div class="nickname">神码观察工作室</div>
+                        <div class="other">生活的真谛从来都不在别处 就在日常一点一滴的奋斗里</div>
+                    </div>
+                </div>
+                        <ul class="flex-list blogger-statistic">
+                                    <li class="item">
+                            <div class="name">访问量</div>
+                            <div class="value">4.3W</div>
+                        </li>
+                                    <li class="item">
+                            <div class="name">文章数</div>
+                            <div class="value">53</div>
+                        </li>
+                                    <li class="item">
+                            <div class="name">粉丝数</div>
+                            <div class="value">698</div>
+                        </li>
+                            </ul>
+            </div>
+            <div class="box modularity aside-search">
+                <div class="modul-head">
+                    <div class="modul-title">
+                        <i class="icon-simply icon-search mr-5"></i>搜索一下（正在开发中...）</div>
+                    <div class="colorful-dot"></div>
+                </div>
+                <div class="modul-body">
+                    <form name="aside-search-form" method="get" action="#">
+                        <input name="keyword" class="search-input" autocomplete="off" aria-label="Search" type="text">
+                        <button type="submit" class="search-submit">搜索</button>
+                    </form>
+                </div>
+            </div>
+    <div class="box modularity aside-puzzle">
+        <div class="modul-head">
+            <div class="modul-title">
+                <i class="icon-simply icon-puzzle mr-5"></i>时光慢漫            </div>
+            <div class="colorful-dot"></div>
+        </div>
+        <div class="modul-body">
+            <div class="aside-timelife-body"></div>        </div>
+    </div>
+<footer>
+    <div class="container">
+        <div class="xs-hidden">来不及找到心仪的内容？按<kbd class="mx-5">Ctrl</kbd>＋<kbd class="mx-5">D</kbd>加入收藏夹吧！</div>
+        <div class="info">
+            <a href="https://beian.miit.gov.cn/" target="_blank">神码观察专用备20240113号</a>
+<script>
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"KHHxF3AZ2YznjvOy",ck:"KHHxF3AZ2YznjvOy",autoTrack:true,hashMode:true});
+</script>                    </div>
+    </div>
+</footer>
+<div class="sidebar">
+    <div class="item sidebar-totop">
+        <i class="icon-simply icon-totop"></i>
+    </div>
+</div>
+<script type="text/javascript">
+	(function (w, d, s, i, v, j, b) {
+		w[i] = w[i] || function () {
+			(w[i].v = w[i].v || []).push(arguments)
+		};
+		j = d.createElement(s),
+			b = d.getElementsByTagName(s)[0];
+		j.async = true;
+		j.charset = "UTF-8";
+		j.src = "https://www.v5kf.com/203974/31cc603011177/v5kf.js";
+		b.parentNode.insertBefore(j, b);
+	})(window, document, "script", "V5CHAT");
+</script>	
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/layui/2.9.2/layui.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/swiper/8.4.7/swiper-bundle.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/clipboard/2.0.11/clipboard.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/prismjs/1.29.0/components/prism-core.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/prismjs//1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/prismjs/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/prismjs/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/prismjs/1.29.0/plugins/show-language/prism-show-language.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/prismjs/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="https://simply.webkit.top/content/templates/simply/assets/js/simply.js?t=1703731942"></script>
+</body>
+</html>
