@@ -1,0 +1,335 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="color-scheme" content="light dark">
+<title>神码观察工作室|官网</title>
+<meta name="keywords" content="神码观察工作室|官网">
+<meta name="description" content="神码观察工作室|官网">
+<link rel="shortcut icon" href="/images/LOGO.ico">
+<link rel="stylesheet" href="/css/layui.css">
+<link rel="stylesheet" href="/css/swiper-bundle.min.css">
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+<link rel="stylesheet" href="/css/simply.css">
+<script>
+window.theme = {
+	isMobile: /windows phone|iphone|android|HarmonyOS/gi.test(window.navigator.userAgent),
+	mediaQuery: window.matchMedia('(prefers-color-scheme: dark)'),
+	detectIE: function() {
+		let ua = window.navigator.userAgent,
+			ie = ua.indexOf('MSIE ');
+		if (ie > 0) {
+			return parseInt(ua.substring(ie + 5, ua.indexOf('.', ie)), 10);
+		}
+		if (ua.indexOf('Trident/') > 0) {
+			let rv = ua.indexOf('rv:');
+			return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+		}
+		let edge = ua.indexOf('.Edge/');
+		return edge > 0 && parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+	},
+	swiperDelay: 3	
+}
+theme.detectIE() && alert('当前站点不支持IE浏览器（或您开启了兼容模式），请使用其他浏览器访问（或关闭兼容模式）。');
+localStorage.getItem('dark-mode') && document.documentElement.classList.add('dark');
+
+function darkModeHandler() {
+	if (!theme.isMobile) return;
+	if (theme.mediaQuery.matches) {
+		document.documentElement.classList.remove('light');
+		document.documentElement.classList.add('dark');
+	} else {
+		document.documentElement.classList.remove('dark');
+		document.documentElement.classList.add('light');
+	}
+}
+darkModeHandler();
+theme.mediaQuery.addListener(darkModeHandler);
+</script>
+</head>
+<body>
+<header>
+	<div class="flex-v-between container">
+		<div class="flex-v-center left">
+			    			<a class="flex-v-center logo" href="/index.html" title="神码观察|官网">
+    				<img class="image" src="/images/LOGO（横向）.png" alt="LOGO">
+    			</a>
+    				</div>
+		<div class="flex-v-between right">
+		    <nav>
+    			    <nav>
+        <ul class="nav-items">
+            <li class="item"><a href="/index.html" >首页</a></li>
+                <li class="item"><a href="https://blog.csdn.net/2302_81075415/category_12527866.html?spm=1001.2014.3001.5482" >开源推荐</a></li>
+                <li class="item">
+                    <a>镜像下载<i class="icon-simply icon-down ml-5"></i></a>
+                    <div class="nav-child-box">
+                    <ul class="nav-child-items">
+                        <li class="item"><a href="/download/win/xp/winXP.html">Windows XP</a></li>
+                        <li class="item"><a href="/download/win/7/win7.html">Windows 7</a></li>
+                        <li class="item"><a href="/download/win/8/win8.html">Windows 8</a></li>
+                        <li class="item"><a href="/download/win/10/win10.html">Windows 10</a></li>
+                        <li class="item"><a href="/download/win/11/win11.html">Windows 11</a></li>
+                        <li class="item"><a href="/download/win/12/win12.html">Windows 12 用户自制版</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <a>官方账号<i class="icon-simply icon-down ml-5"></i></a>
+                    <div class="nav-child-box">
+                    <ul class="nav-child-items">
+                        <li class="item"><a href="https://weibo.com/u/7086338548">微博</a></li>
+                        <li class="item"><a href="https://space.bilibili.com/3546578178542445?spm_id_from=333.1007.0.0">哔哩哔哩</a></li>
+                        <li class="item"><a href="https://blog.csdn.net/2302_81075415">CSDN</a></li>
+                        <li class="item"><a href="https://afdian.net/a/weblime">爱发电</a></li>
+                    </ul>
+                    </div>
+                </li>
+        </ul>
+    </nav>
+</nav>
+            <div class="divider-vertical">
+        		<button class="button-switch" id="dark-mode" type="button" role="switch">
+        			<div class="icon-box">
+        				<i class="icon-simply icon-during"></i>
+        				<i class="icon-simply icon-night"></i>
+        			</div>
+        		</button>
+        	</div>
+        	        	    <div class="divider-vertical"><a class="color-theme" href="/login/login.html">登录</a></div>
+        	    <div class="divider-vertical"><a class="color-theme" href="/login/reg.html">注册</a></div>
+        			</div>
+		<div class="flex-center xs-nav-button">
+			<div class="nav-burger"></div>
+		</div>
+		<div class="xs-nav-layer"></div>
+	</div>
+</header>
+
+<div class="container frame-container">
+    <main class="box frame-main">
+        
+<div class="display-flex film-box">
+        <div class="swiper swiper-filmstrip" id="swiper-filmstrip-index-1">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                <a class="percent-image" href="https://www.leansight.cn/">
+                    <figure class="figure">
+                        <img src="/images/1.png" alt="更懂工业的模型驱动低代码平台" />
+                        <figcaption class="figcaption">
+                            <span class="badge mr-5">企业推广</span>
+                            <span class="title">更懂工业的模型驱动低代码平台|零赛云 leansight</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="percent-image" href="https://www.leansight.cn/">
+                    <figure class="figure">
+                        <img src="/images/2.png" alt="更懂工业的模型驱动低代码平台" />
+                        <figcaption class="figcaption">
+                            <span class="badge mr-5">企业推广</span>
+                            <span class="title">更懂工业的模型驱动低代码平台|零赛云 leansight</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+                        <div class="swiper-slide">
+                <a class="percent-image" href="https://www.leansight.cn/">
+                    <figure class="figure">
+                        <img src="/images/3.png" alt="更懂工业的模型驱动低代码平台" />
+                        <figcaption class="figcaption">
+                            <span class="badge mr-5">企业推广</span>
+                            <span class="title">更懂工业的模型驱动低代码平台|零赛云 leansight</span>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+                    </div>
+        <div class="simply-pagination"></div>
+        <div class="simply-button-prev">
+            <i class="icon-simply icon-prev"></i>
+        </div>
+        <div class="simply-button-next">
+            <i class="icon-simply icon-next"></i>
+        </div>
+    </div>
+        <ul class="recommend-image">
+                <li class="item">
+            <a class="percent-image" href="https://blog.csdn.net/2302_81075415/article/details/135178999?spm=1001.2014.3001.5502">
+                <figure class="figure">
+                    <img src="./images/924388db9416dc2f6630a9a58791c15b.png" alt="一款开源的多功能远程调试远程 Web 项目的工具，web开发者必备" />
+                    <figcaption class="figcaption">
+                        <span class="badge mr-5">华为收录</span>
+                        <span class="title">一款开源的多功能远程调试远程 Web 项目的工具，web开发者必备</span>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+                <li class="item">
+            <a class="percent-image" href="/index1.html">
+                <figure class="figure">
+                    <img src="/images/1.jpg" alt="" />
+                    <figcaption class="figcaption">
+                        <span class="badge mr-5">开源</span>
+                        <span class="title">windows 12 网页版</span>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+            </ul>
+    </div>
+        <div class="modularity modularity-list">
+                            <div class="modul-head">
+                    <ul class="flex-list">
+                        <li class="item active">最新文章</li>
+                    </ul>
+                                    </div>
+                        <div class="modul-body">
+                <ul class="article-list">
+                                        <li class="item">
+                                                <div class="thumbnail">
+                            <a class="percent-image" href="/post/index.html">
+                                <figure class="figure">
+                                    <img src="/images/01.jpeg" alt="" />
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="infomation">
+                            <h3 class="title">
+                                <span title="首页置顶" class="badge">置顶公告</span> <a href="/post/index.html">V6.0新版网站通知</a>
+                                                            </h3>
+                            <div class="description">官方投稿</div>
+                            <ul class="flex-list meta">
+                
+                                <li class="item time">
+                                    <i class="icon-simply icon-time mr-3"></i>2024-01-13 15:30                                </li>
+                                <li class="item view">
+                                    <i class="icon-simply icon-view mr-3"></i>689514                                </li>
+                                <li class="item comt">
+                                    <a href="#"><i class="icon-simply icon-message mr-3"></i>999+</a>
+                                </li>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+    <a class="percent-image" href="/post/index.html">
+        <figure class="figure">
+            <img src="/images/90970527eb17464b8a317a8587167f3e.jpeg" alt="" />
+        </figure>
+    </a>
+</div>
+<div class="infomation">
+    <h3 class="title">
+        <span title="首页置顶" class="badge">下载</span> <a href="/1.html">网站模版</a>
+                                    </h3>
+    <div class="description">官方投稿</div>
+    <ul class="flex-list meta">
+
+        <li class="item time">
+            <i class="icon-simply icon-time mr-3"></i>2024-01-13 15:30                                </li>
+        <li class="item view">
+            <i class="icon-simply icon-view mr-3"></i>689514                                </li>
+        <li class="item comt">
+            <a href="#"><i class="icon-simply icon-message mr-3"></i>999+</a>
+        </li>
+</div>
+</li>
+        </div>
+    </main>
+    <aside class="frame-aside">
+        
+    <div class="box aside-blogger">
+        <div class="blogger-image">
+            <img src="/images/1.jpg" alt="神码观察工作室" />
+        </div>
+        <div class="user-info">
+            <div class="avatar">
+                <img src="/images/LOGO.png" alt="神码观察工作室" />
+            </div>
+            <div class="user-meta">
+                <div class="nickname">神码观察工作室</div>
+                <div class="other">生活的真谛从来都不在别处 就在日常一点一滴的奋斗里</div>
+            </div>
+        </div>
+                    </ul>
+                <ul class="flex-list blogger-statistic">
+                            <li class="item">
+                    <div class="name">访问量</div>
+                    <div class="value">4.3W</div>
+                </li>
+                            <li class="item">
+                    <div class="name">文章数</div>
+                    <div class="value">53</div>
+                </li>
+                            <li class="item">
+                    <div class="name">粉丝数</div>
+                    <div class="value">698</div>
+                </li>
+                    </ul>
+    </div>
+    <div class="box modularity aside-search">
+        <div class="modul-head">
+            <div class="modul-title">
+                <i class="icon-simply icon-search mr-5"></i>搜索一下（正在开发中...）</div>
+            <div class="colorful-dot"></div>
+        </div>
+        <div class="modul-body">
+            <form name="aside-search-form" method="get" action="#">
+                <input name="keyword" class="search-input" autocomplete="off" aria-label="Search" type="text">
+                <button type="submit" class="search-submit">搜索</button>
+            </form>
+        </div>
+    </div>
+    <div class="box modularity aside-puzzle">
+        <div class="modul-head">
+            <div class="modul-title">
+                <i class="icon-simply icon-puzzle mr-5"></i>时光慢漫</div>
+            <div class="colorful-dot"></div>
+        </div>
+        <div class="modul-body">
+            <div class="aside-timelife-body"></div>        </div>
+    </div>
+    </aside>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="xs-hidden">来不及找到心仪的内容？按<kbd class="mx-5">Ctrl</kbd>＋<kbd class="mx-5">D</kbd>加入收藏夹吧！</div>
+        <div class="info">
+            <a href="https://beian.miit.gov.cn/" target="_blank">神码观察专用备20240113号</a>
+<script>
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"KHHxF3AZ2YznjvOy",ck:"KHHxF3AZ2YznjvOy",autoTrack:true,hashMode:true});
+</script>                    </div>
+    </div>
+</footer>
+<div class="sidebar">
+    <div class="item sidebar-totop">
+        <i class="icon-simply icon-totop"></i>
+    </div>
+</div>
+<script type="text/javascript">
+	(function (w, d, s, i, v, j, b) {
+		w[i] = w[i] || function () {
+			(w[i].v = w[i].v || []).push(arguments)
+		};
+		j = d.createElement(s),
+			b = d.getElementsByTagName(s)[0];
+		j.async = true;
+		j.charset = "UTF-8";
+		j.src = "https://www.v5kf.com/203974/31cc603011177/v5kf.js";
+		b.parentNode.insertBefore(j, b);
+	})(window, document, "script", "V5CHAT");
+</script>		
+<script src="/js/main/jquery.min.js"></script>
+<script src="/js/main/layui.js"></script>
+<script src="/js/main/swiper-bundle.min.js"></script>
+<script src="/js/main/clipboard.min.js"></script>
+<script src="/js/main/simply.js?t=1703731942"></script>
+</body>
+</html>
